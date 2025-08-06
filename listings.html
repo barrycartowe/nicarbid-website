@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Listings – CarBidNI</title>
+  <meta name="description" content="Browse car listings for sale across Northern Ireland on CarBidNI.">
+  <link rel="icon" type="image/x-icon" href="favicon.ico" />
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.4.1/dist/tailwind.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #f8f9fa;
+      color: #333333;
+    }
+    .primary-btn {
+      background-color: #004b91;
+    }
+    .primary-btn:hover {
+      background-color: #003865;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header class="bg-gray-100 shadow-sm">
+    <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+      <h1 class="text-2xl font-extrabold">
+        <span class="text-[#004b91]">Car</span><span class="text-[#35b368]">BidNI</span>
+      </h1>
+      <nav class="space-x-6 text-sm md:text-base">
+        <a href="index.html" class="hover:text-blue-600">Home</a>
+        <a href="listings.html" class="text-blue-600 font-semibold">Buy</a>
+        <a href="list-your-car.html" class="hover:text-blue-600">Sell</a>
+        <a href="#" class="hover:text-blue-600">How It Works</a>
+        <a href="contact.html" class="hover:text-blue-600">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- LISTINGS -->
+  <section class="py-16 px-4 max-w-6xl mx-auto">
+    <h2 class="text-3xl font-bold mb-10 text-center">Available Cars</h2>
+    <div class="grid md:grid-cols-3 gap-6">
+      
+      <!-- Card 1 -->
+      <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition">
+        <img src="https://via.placeholder.com/400x250?text=Car+1" alt="Car 1" class="w-full">
+        <div class="p-4">
+          <h3 class="text-xl font-semibold mb-1">2019 Ford Fiesta</h3>
+          <p class="text-sm text-gray-500 mb-2">1.0 EcoBoost Titanium</p>
+          <p class="mb-2">Mileage: 45,000 miles</p>
+          <p class="text-lg font-bold text-green-600">£8,450</p>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition">
+        <img src="https://via.placeholder.com/400x250?text=Car+2" alt="Car 2" class="w-full">
+        <div class="p-4">
+          <h3 class="text-xl font-semibold mb-1">2021 Volkswagen Golf</h3>
+          <p class="text-sm text-gray-500 mb-2">1.5 TSI Match Edition</p>
+          <p class="mb-2">Mileage: 28,000 miles</p>
+          <p class="text-lg font-bold text-green-600">£14,200</p>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition">
+        <img src="https://via.placeholder.com/400x250?text=Car+3" alt="Car 3" class="w-full">
+        <div class="p-4">
+          <h3 class="text-xl font-semibold mb-1">2017 BMW 320d</h3>
+          <p class="text-sm text-gray-500 mb-2">M Sport Auto</p>
+          <p class="mb-2">Mileage: 63,500 miles</p>
+          <p class="text-lg font-bold text-green-600">£10,995</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-gray-900 text-gray-300 py-8 text-center text-sm mt-8">
+    <p>© 2025 CarBidNI. All rights reserved.</p>
+    <p class="mt-2">Email: info@carbidni.com</p>
+  </footer>
+
+</body>
+</html>
