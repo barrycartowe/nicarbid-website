@@ -6,11 +6,27 @@
   <title>NICarBid – Sell Smarter. Buy Better.</title>
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.4.1/dist/tailwind.min.css" rel="stylesheet">
 </head>
-<body class="bg-gray-100 text-gray-900 font-sans">
-  <div class="max-w-4xl mx-auto p-8 text-center">
-    <h1 class="text-4xl font-bold mb-4">🚗 NICarBid</h1>
-    <p class="text-xl mb-6">Sell smarter. Buy better. The fair car auction platform for Northern Ireland.</p>
-    <a href="#" class="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700">Coming Soon</a>
-  </div>
-</body>
-</html>
+<body class="bg-gray-50 text-gray-800 font-sans">
+
+  <!-- HERO SECTION -->
+  <section class="bg-white shadow-sm py-12 px-4 text-center">
+    <h1 class="text-4xl md:text-5xl font-bold mb-4">🚗 NICarBid</h1>
+    <p class="text-lg md:text-xl mb-6">Sell smarter. Buy better. Northern Ireland’s fair and transparent car auction platform.</p>
+    <a href="#" class="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition">List Your Car</a>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section class="py-16 px-6 max-w-5xl mx-auto text-center">
+    <h2 class="text-3xl font-bold mb-10">How It Works</h2>
+    <div class="grid md:grid-cols-3 gap-10 text-left">
+      <div>
+        <h3 class="text-xl font-semibold mb-2">1. List Your Car</h3>
+        <p>Use our simple form to upload your car’s details and photos. We’ll help make your listing shine.</p>
+      </div>
+      <div>
+        <h3 class="text-xl font-semibold mb-2">2. Buyers Bid</h3>
+        <p>Buyers across NI compete to offer you the best price — just like a dealer, but fairer.</p>
+      </div>
+      <div>
+        <h3 class="text-xl font-semibold mb-2">3. Get Paid</h3>
+        <p>Accept the top bid and arrange payment and collection directly, or through our par
