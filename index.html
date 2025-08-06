@@ -5,19 +5,39 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>CarBidNI – Sell Smarter. Buy Better.</title>
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.4.1/dist/tailwind.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #f8f9fa;
+      color: #333333;
+    }
+    .primary-btn {
+      background-color: #004b91;
+    }
+    .primary-btn:hover {
+      background-color: #003865;
+    }
+    .accent-btn {
+      background-color: #35b368;
+    }
+    .accent-btn:hover {
+      background-color: #279c57;
+    }
+  </style>
 </head>
-<body class="bg-white text-gray-800 font-sans">
+<body>
 
   <!-- NAVBAR -->
   <header class="bg-gray-100 shadow-sm">
     <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
       <h1 class="text-2xl font-extrabold">
-  <span class="text-[#004b91]">Car</span><span class="text-[#35b368]">BidNI</span>
-</h1>
+        <span class="text-[#004b91]">Car</span><span class="text-[#35b368]">BidNI</span>
+      </h1>
       <nav class="space-x-6 text-sm md:text-base">
-        <a href="#" class="hover:text-blue-600">Home</a>
+        <a href="index.html" class="hover:text-blue-600">Home</a>
         <a href="#" class="hover:text-blue-600">Buy</a>
-        <a href="#" class="hover:text-blue-600">Sell</a>
+        <a href="list-your-car.html" class="hover:text-blue-600">Sell</a>
         <a href="#" class="hover:text-blue-600">How It Works</a>
         <a href="#" class="hover:text-blue-600">Contact</a>
       </nav>
@@ -28,7 +48,7 @@
   <section class="text-center py-16 px-4 bg-white">
     <h2 class="text-4xl md:text-5xl font-bold mb-4">Sell Smarter. Buy Better.</h2>
     <p class="text-lg md:text-xl mb-6 max-w-xl mx-auto">The fair and transparent car auction platform built for Northern Ireland.</p>
-    <a href="#" class="inline-block bg-blue-600 text-white px-8 py-3 rounded-lg hover:bg-blue-700 transition">List Your Car</a>
+    <a href="list-your-car.html" class="primary-btn text-white px-8 py-3 rounded-lg transition">List Your Car</a>
   </section>
 
   <!-- SERVICES / TILES -->
@@ -46,18 +66,16 @@
         </div>
         <div class="bg-white shadow-md rounded-xl p-6 hover:shadow-lg transition">
           <h4 class="text-xl font-semibold mb-2">🛠️ Mobile Services</h4>
-          <p class="text-gray-600">Optional add-ons like mobile inspection, light bodywork, and valeting to help your car sell better.</p>
+          <p class="text-gray-600">Optional add-ons like mobile inspection, light bodywork, and valeting help your car sell better.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- FOOTER -->
-  <footer class="bg-gray-900 text-gray-300 py-8 text-center text-sm mt-8">
-    <p>© 2025 CarBidNI. All rights reserved.</p>
-    <p class="mt-2">Email: info@carbidni.com</p>
-  </footer>
+  <!-- CTA -->
+  <section class="py-16 px-6 text-center">
+    <h2 class="text-3xl font-bold mb-6">Ready to sell your car the smart way?</h2>
+    <a href="list-your-car.html" class="accent-btn text-white px-8 py-4 rounded-lg text-lg hover:bg-green-700 transition">List Your Car Now</a>
+  </section>
 
-</body>
-</html>
-
+  <!-- FOOTER -
