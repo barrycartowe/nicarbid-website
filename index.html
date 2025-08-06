@@ -3,102 +3,86 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>CarBidNI – Sell Smarter. Buy Better.</title>
-  <meta name="description" content="List and buy cars across Northern Ireland with confidence. Fair, fast, and dealer-free." />
+  <title>CarBidNI – Trusted Car Auctions in NI</title>
+  <meta name="description" content="Fair, fast, and transparent car auctions in Northern Ireland. List or buy a vehicle today." />
   <link rel="icon" type="image/x-icon" href="favicon.ico" />
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.4.1/dist/tailwind.min.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
   <style>
     body {
       font-family: 'Inter', sans-serif;
-      background-color: #f8f9fa;
-      color: #333;
+      background-color: #1a1a1a;
+      color: #f4f4f4;
     }
-    .primary-btn {
-      background-color: #004b91;
+    .mint-btn {
+      background-color: #2EE59D;
     }
-    .primary-btn:hover {
-      background-color: #003865;
+    .mint-btn:hover {
+      background-color: #27c48a;
     }
-    .accent-btn {
-      background-color: #35b368;
+    .fade-in {
+      animation: fadeIn 1s ease-in forwards;
+      opacity: 0;
     }
-    .accent-btn:hover {
-      background-color: #279c57;
+    @keyframes fadeIn {
+      to {
+        opacity: 1;
+      }
     }
   </style>
 </head>
 <body class="antialiased">
 
-  <!-- NAVIGATION -->
-  <header class="bg-white shadow-md sticky top-0 z-50">
+  <!-- NAVBAR -->
+  <header class="sticky top-0 z-50 bg-[#1a1a1a] border-b border-gray-800">
     <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-      <h1 class="text-2xl font-extrabold tracking-tight">
-        <span class="text-[#004b91]">Car</span><span class="text-[#35b368]">BidNI</span>
+      <h1 class="text-2xl font-extrabold tracking-tight text-white">
+        Car<span class="text-[#2EE59D]">BidNI</span>
       </h1>
-      <nav class="space-x-6 text-sm font-medium">
-        <a href="index.html" class="text-[#004b91]">Home</a>
-        <a href="listings.html" class="hover:text-[#004b91]">Buy</a>
-        <a href="list-your-car.html" class="hover:text-[#004b91]">Sell</a>
-        <a href="#" class="hover:text-[#004b91]">How It Works</a>
-        <a href="contact.html" class="hover:text-[#004b91]">Contact</a>
+      <nav class="space-x-6 text-sm font-medium text-white">
+        <a href="#" class="hover:text-[#2EE59D]">Home</a>
+        <a href="listings.html" class="hover:text-[#2EE59D]">Buy</a>
+        <a href="list-your-car.html" class="hover:text-[#2EE59D]">Sell</a>
+        <a href="contact.html" class="hover:text-[#2EE59D]">Contact</a>
+        <a href="list-your-car.html" class="mint-btn text-[#1a1a1a] px-4 py-2 rounded-md font-semibold transition">List Your Car</a>
       </nav>
     </div>
   </header>
 
-  <!-- HERO SECTION -->
-  <section class="relative bg-cover bg-center h-[500px] flex items-center justify-center text-white" style="background-image: url('https://images.unsplash.com/photo-1606902965553-0e0b09fdb9cf?auto=format&fit=crop&w=1400&q=80');">
-    <div class="bg-black bg-opacity-50 p-10 rounded-lg text-center max-w-2xl">
-      <h2 class="text-4xl md:text-5xl font-bold mb-4">Sell Smarter. Buy Better.</h2>
-      <p class="text-lg mb-6">Northern Ireland's digital car auction platform. Transparent. Fast. Trusted.</p>
-      <a href="list-your-car.html" class="primary-btn text-white px-6 py-3 rounded-lg font-semibold transition">List Your Car</a>
+  <!-- HERO -->
+  <section class="relative bg-cover bg-center h-[90vh] flex items-center justify-center" style="background-image: url('https://images.unsplash.com/photo-1605902711622-cfb43c4437d9?auto=format&fit=crop&w=1600&q=80');">
+    <div class="bg-black/60 p-10 rounded-xl text-center max-w-2xl fade-in">
+      <h2 class="text-5xl font-extrabold mb-4">Fair Car Auctions.</h2>
+      <p class="text-lg text-gray-200 mb-6">Built for drivers across Northern Ireland. No pressure. No dealer markups. Just smart selling.</p>
+      <a href="list-your-car.html" class="mint-btn text-[#1a1a1a] px-6 py-3 rounded-lg font-semibold text-lg hover:opacity-90 transition">Get Started</a>
     </div>
   </section>
 
-  <!-- SERVICE TILES -->
-  <section class="py-20 px-6 bg-gray-50">
-    <div class="max-w-7xl mx-auto">
-      <h3 class="text-3xl font-bold text-center mb-12">How Can We Help?</h3>
-      <div class="grid md:grid-cols-3 gap-10">
-
-        <div class="bg-white rounded-xl shadow-lg p-6 text-center hover:shadow-2xl transition">
-          <img src="https://cdn-icons-png.flaticon.com/512/1161/1161388.png" alt="Sell" class="w-16 h-16 mx-auto mb-4">
-          <h4 class="text-xl font-semibold mb-2">Sell My Car</h4>
-          <p class="text-gray-600 text-sm">No hidden fees. No stress. You get fair offers from verified buyers. We take care of the rest.</p>
-        </div>
-
-        <div class="bg-white rounded-xl shadow-lg p-6 text-center hover:shadow-2xl transition">
-          <img src="https://cdn-icons-png.flaticon.com/512/841/841364.png" alt="Buy" class="w-16 h-16 mx-auto mb-4">
-          <h4 class="text-xl font-semibold mb-2">Buy with Confidence</h4>
-          <p class="text-gray-600 text-sm">All cars inspected and seller-verified. Bid online and get alerts for the cars you want.</p>
-        </div>
-
-        <div class="bg-white rounded-xl shadow-lg p-6 text-center hover:shadow-2xl transition">
-          <img src="https://cdn-icons-png.flaticon.com/512/2331/2331970.png" alt="Services" class="w-16 h-16 mx-auto mb-4">
-          <h4 class="text-xl font-semibold mb-2">Vehicle Prep Services</h4>
-          <p class="text-gray-600 text-sm">From valeting to light repairs, we help your car look its best before auction.</p>
-        </div>
-
+  <!-- FEATURES -->
+  <section class="py-20 px-6 bg-[#1f1f1f]">
+    <div class="max-w-6xl mx-auto grid md:grid-cols-3 gap-10 text-center">
+      <div class="bg-[#2a2a2a] rounded-xl p-6 shadow hover:shadow-xl transition fade-in">
+        <img src="https://cdn-icons-png.flaticon.com/512/2331/2331970.png" alt="Sell" class="w-14 h-14 mx-auto mb-4">
+        <h3 class="text-xl font-semibold mb-2">Sell Your Car</h3>
+        <p class="text-sm text-gray-400">Create a listing in minutes and receive competitive offers from verified buyers.</p>
+      </div>
+      <div class="bg-[#2a2a2a] rounded-xl p-6 shadow hover:shadow-xl transition fade-in">
+        <img src="https://cdn-icons-png.flaticon.com/512/841/841364.png" alt="Buy" class="w-14 h-14 mx-auto mb-4">
+        <h3 class="text-xl font-semibold mb-2">Buy With Confidence</h3>
+        <p class="text-sm text-gray-400">All vehicles are inspected and verified before being listed. Bid safely, bid smart.</p>
+      </div>
+      <div class="bg-[#2a2a2a] rounded-xl p-6 shadow hover:shadow-xl transition fade-in">
+        <img src="https://cdn-icons-png.flaticon.com/512/1161/1161388.png" alt="Services" class="w-14 h-14 mx-auto mb-4">
+        <h3 class="text-xl font-semibold mb-2">Mobile Prep Service</h3>
+        <p class="text-sm text-gray-400">Our team helps you prep your car at home with valet, light repairs & photos.</p>
       </div>
     </div>
   </section>
 
-  <!-- CTA BAR -->
-  <section class="bg-[#004b91] text-white py-16 px-6 text-center">
-    <h2 class="text-3xl font-bold mb-4">Join hundreds of sellers across NI</h2>
-    <p class="mb-6 text-white/80">Listing your vehicle is free, fast, and no-obligation. See what your car is worth.</p>
-    <a href="list-your-car.html" class="bg-white text-[#004b91] px-6 py-3 rounded-md font-semibold hover:bg-gray-200 transition">Start Selling</a>
-  </section>
-
-  <!-- TRUST STRIP -->
-  <section class="bg-white py-6 border-t text-center text-sm text-gray-500">
-    Trusted by individuals, garages, and traders across Northern Ireland
-  </section>
-
   <!-- FOOTER -->
-  <footer class="bg-gray-900 text-gray-300 py-10 px-6 text-center text-sm">
+  <footer class="bg-black text-gray-400 py-10 px-6 text-center text-sm">
     <p>© 2025 CarBidNI. All rights reserved.</p>
-    <p class="mt-2">Email: info@carbidni.com</p>
+    <p class="mt-2">Email: info@carbidni.com | Privacy | Terms</p>
   </footer>
 
 </body>
